@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me - Jane Doe</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* New Header Navigation Bar (from the second HTML) */
+    header {
+      background: #cce0ff;
+      color: #003366;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #003366;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    
+    /* Container */
+    .profile-container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Left Side (Profile Info) */
+    .profile-left {
+      width: 300px;
+      background: #e6f3fa;
+      padding: 30px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #ccc;
+    }
+    .profile-left h1 {
+      margin: 10px 0 5px 0;
+      font-size: 1.5em;
+      color: #2c3e50;
+    }
+    .profile-left h2 {
+      margin: 5px 0;
+      font-weight: normal;
+      color: #666;
+    }
+    .profile-left h3 {
+      margin: 5px 0;
+      font-weight: normal;
+      font-size: 0.95em;
+      color: #666;
+    }
+    
+    /* Social Icons */
+    .social-icons {
+      margin-top: 15px;
+    }
+    .social-icons a {
+      margin: 0 5px;
+    }
+    .social-icons a img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+    }
+    
+    /* Right Side (Main Content) */
+    .profile-right {
+      flex: 1;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .profile-right h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    
+    /* Two-Column Section */
+    .two-column {
+      display: flex;
+      gap: 40px;
+      margin-top: 20px;
+    }
+    .two-column > div {
+      flex: 1;
+    }
+    .two-column h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    .two-column ul {
+      margin-left: 5px;
+      padding-left: 0;
+    }
+    
+    /* Education List (no dots, only 🎓) */
+    .education-list {
+      list-style: none;
+      margin-left: 5px; 
+      padding-left: 0;
+    }
+    .education-list li::before {
+      content: "🎓 ";
+      margin-right: 5px;
+    }
+    
+    /* Additional Sections */
+    .contact {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/yourusername/another-repo" target="_blank">Home</a></li>
+        <li><a href="https://github.com/yourusername/another-repo" target="_blank">Research &amp; Publications</a></li>
+        <li><a href="https://github.com/yourusername/another-repo" target="_blank">Projects</a></li>
+        <li><a href="https://github.com/yourusername/another-repo" target="_blank">Blog</a></li>
+        <li><a href="https://github.com/yourusername/another-repo" target="_blank">About</a></li>
+        <li><a href="https://github.com/yourusername/another-repo" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <!-- Left Side: Profile Info -->
+    <div class="profile-left">
+      <!-- Replace 'profile.jpg' with your own photo URL -->
+      <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+      <h1>Jane Doe</h1>
+      <h2>PhD Student in Statistics</h2>
+      <h3>University of Data Science</h3>
+
+      <!-- Social Icons (GitHub, LinkedIn, Twitter, etc.) -->
+      <div class="social-icons">
+        <a href="https://github.com/YourUsername" target="_blank">
+          <img src="github-icon.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/YourUsername" target="_blank">
+          <img src="linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/YourUsername" target="_blank">
+          <img src="twitter-icon.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side: Main Content -->
+    <div class="profile-right">
+      <h2 id="about">About Me</h2>
+      <p>
+        I am a passionate researcher in the field of behaviour and decision-making, 
+        specializing in <strong>informed decision-making</strong>, behaviour change, and the 
+        influence of digital communication. My work spans a variety of topics—from data 
+        ethics to interdisciplinary research methods—and I enjoy collaborating with 
+        diverse teams to make data-driven insights accessible and actionable.
+      </p>
+      <p>
+        I strongly believe in open science and reproducible research. When I’m not 
+        crunching numbers, you’ll likely find me mentoring undergraduate students, 
+        exploring new computational tools, or giving talks at local data science meetups.
+      </p>
+
+      <div class="two-column">
+        <!-- Interests -->
+        <div>
+          <h3>Interests &emsp;</h3>
+          <ul>
+            <li>Decision Making</li>
+            <li>Behaviour Change</li>
+            <li>Statistical Computing</li>
+            <li>Collaborative Research</li>
+            <li>Open Science</li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h3>Education &emsp;</h3>
+          <ul class="education-list">
+            <li>PhD in Statistics, University of Data Science (2022–Present)</li>
+            <li>MSc in Applied Statistics, Tech Institute (2020)</li>
+            <li>BSc in Mathematics, State University (2018)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Additional Section: Contact -->
+      <div class="contact" id="contact">
+        <h3>Get in Touch &emsp;📧</h3>
+        <p>
+          Feel free to <a href="mailto:jane.doe@example.com">email me</a> if you’d like to discuss 
+          potential collaborations, ask about my research, or just say hello!
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
